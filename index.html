@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Speech Engine</title>
+  </head>
+  <body class="m-auto text-center">
+    <div
+      class="border border-purple m-4"
+      contenteditable
+      oninput="setText(event)"
+    >
+      Insira o texto
+    </div>
+    <button onclick="speak()" class="p-4 bg-purple-200 rounded shadow">
+      Falar
+    </button>
+    <button
+      onclick="stop()"
+      class="p-4 bg-purple-700 text-white rounded shadow"
+    >
+      Parar
+    </button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
